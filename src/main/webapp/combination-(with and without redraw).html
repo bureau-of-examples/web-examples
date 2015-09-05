@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title></title>
+    <link href="../js/test.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+
+    <script src="../js/zcl.js"></script>
+    <script src="../js/test.js"></script>
+</head>
+<body>
+<script>
+    testCombination(zcl.combination, [], 1, 0);
+    testCombination(zcl.combinationRedrawAllowed, [], 1, 0);
+</script>
+
+<script>
+    testCombination(zcl.combination, [1, 2, 3, 4], 1, 0);
+    testCombination(zcl.combinationRedrawAllowed, [1, 2, 3, 4], 1, 0);
+</script>
+
+<script>
+    testCombination(zcl.combination, [1, 2, 3, 4], 1, 2);
+    testCombination(zcl.combinationRedrawAllowed, [1, 2, 3, 4], 1, 2);
+</script>
+
+<script>
+    testCombination(zcl.combination, [1, 2, 3, 4], 2, 0);
+    testCombination(zcl.combinationRedrawAllowed, [1, 2, 3, 4], 2, 0);
+</script>
+
+<script>
+    testCombination(zcl.combination, [1, 2, 3, 4], 3, 0);
+    testCombination(zcl.combinationRedrawAllowed, [1, 2, 3, 4], 3, 0);
+</script>
+
+<script>
+    testCombination(zcl.combination, [1, 2, 3, 4], 4, 0);
+    testCombination(zcl.combinationRedrawAllowed, [1, 2, 3, 4], 4, 0);
+</script>
+
+<script>
+    testCombination(zcl.combination, [1, 2, 3, 4], 5, 0);
+    testCombination(zcl.combinationRedrawAllowed, [1, 2, 3, 4], 5, 0);
+</script>
+
+<script>
+    testCombination(zcl.combination, [1, 2, 3, 4, 5], 3, 0);
+    testCombination(zcl.combinationRedrawAllowed, [1, 2, 3, 4, 5], 3, 0);
+</script>
+
+<script>
+    testCombination(zcl.combination, [1, 2, 3, 4, 5, 6], 3, 0);
+    testCombination(zcl.combinationRedrawAllowed, [1, 2, 3, 4, 5, 6], 3, 0);
+</script>
+
+<script>
+    testCombination(zcl.combination, [1, 2, 3, 4, 5, 6], 3, 3);
+    testCombination(zcl.combinationRedrawAllowed, [1, 2, 3, 4, 5, 6], 3, 3);
+</script>
+
+<script>
+    testCombination(zcl.combination, [1, 2, 3, 4, 5, 6], 4, 0);
+    testCombination(zcl.combinationRedrawAllowed, [1, 2, 3, 4, 5, 6], 4, 0);
+</script>
+
+<script>
+    testCombination(zcl.combination, [1, 2, 3, 4, 5, 6], 5, 0);
+    testCombination(zcl.combinationRedrawAllowed, [1, 2, 3, 4, 5, 6], 5, 0);
+</script>
+
+<script>
+    testCombination(zcl.combination, [1, 2, 3, 4, 5, 6], 6, 0);
+    testCombination(zcl.combinationRedrawAllowed, [1, 2, 3, 4, 5, 6], 6, 0);
+</script>
+</body>
+</html>

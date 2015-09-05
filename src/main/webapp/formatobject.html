@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title></title>
+    <link href="../js/test.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+
+    <script src="../js/zcl.js"></script>
+    <script src="../js/test.js"></script>
+</head>
+<body>
+    <script>
+        var john = { name: "John", age: 30, male: true };
+        var arr = ["bad", "ok", "good", "excellent"];
+        document.write(zcl.formatObject("Words in the arrary are: '{0}', '{1}', '{2}' and '{3}'. '{}' is not formatted and {5} is undefined.<br>", arr));
+        document.write(zcl.formatObject("values in the object are: name = '{name}', age = '{age}' male: '{male}'. '{xxx}' is undefined.<br>", john));
+        document.write(zcl.formatObject("values in the object are: name = '{name}', age = '{age}' male: '{male}'. '{xxx}' is undefined.<br>", john, true));
+        john = { name: "John", address:{postcode : 2000, suburb: 'Sydney CBD'}};
+        document.write(zcl.formatObject("values in the object are: name = '{name}', postcode = '{address.postcode}' suburb: '{address.suburb}'. '{xxx}' is undefined.<br>", john, true));
+    </script>
+</body>
+</html>

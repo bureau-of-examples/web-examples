@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title></title>
+	<link href="../js/test.css" rel="stylesheet" />
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+    
+    <script src="../js/zcl.js"></script>
+    <script src="../js/test.js"></script>
+</head>
+<body>
+    <script>
+        function outputUlTree(items) {
+            document.write("<hr/>");
+            document.write(zcl.ulTree(items, "item id = {id}, parent id = {parent}"));
+        }
+
+        outputUlTree([{ id: 1, parent: 0 }, { id: 2, parent: 0 }, { id: 3, parent: 0 }, { id: 4, parent: 0 }, { id: 5, parent: 0 }]);
+        outputUlTree([{ id: 1, parent: 0 }, { id: 2, parent: 1 }, { id: 3, parent: 2 }, { id: 4, parent: 3 }, { id: 5, parent: 4 }]);
+        outputUlTree([{ id: 1, parent: 0 }, { id: 2, parent: 1 }, { id: 3, parent: 2 }, { id: 4, parent: 3 }, { id: 5, parent: 3 }]);
+        outputUlTree([{ id: 1, parent: 0 }, { id: 2, parent: 1 }, { id: 3, parent: 2 }, { id: 4, parent: 3 }, { id: 5, parent: 2 }]);
+        outputUlTree([{ id: 1, parent: 0 }, { id: 2, parent: 1 }, { id: 3, parent: 2 }, { id: 4, parent: 3 }, { id: 5, parent: 1 }]);
+        outputUlTree([{ id: 1, parent: 0 }, { id: 2, parent: 1 }, { id: 3, parent: 2 }, { id: 4, parent: 3 }, { id: 5, parent: 0 }]);
+        outputUlTree([{ id: 1, parent: 0 }, { id: 2, parent: 1 }, { id: 3, parent: 2 }, { id: 4, parent: 2 }, { id: 5, parent: 0 }]);
+        outputUlTree([{ id: 1, parent: 0 }, { id: 2, parent: 1 }, { id: 3, parent: 2 }, { id: 4, parent: 1 }, { id: 5, parent: 4 }]);
+    </script>
+</body>
+</html>
