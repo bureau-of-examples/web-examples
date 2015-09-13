@@ -1,8 +1,45 @@
+/*********************** COLOR PALETTE *******************************/
+/*********************** GLOBAL STYLE *******************************/
+html {
+  height: 100%; }
+
+body {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Verdana,Geneva,sans-serif;
+  line-height: 20px;
+  color: #585858;
+  background-color: #F4F4F4;
+  height: 100%; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  color: #0B0F08; }
+
+/*********************** HEADER STYLE *******************************/
+header {
+  width: 100%;
+  height: 100%;
+  background: #051522 url(../img/index_header_bg.jpg) scroll center;
+  background-size: cover;
+  color: #FBFBFB;
+  overflow: hidden; }
+  header h1 {
+    width: 15em;
+    color: #FBFBFB;
+    margin: 1em auto; }
+
+/*********************** MAIN STYLE *******************************/
+.main-content {
+  margin: 2em; }
+
+/*********************** FOOTER STYLE *******************************/
+footer {
+  background-color: #202121; }
+
 article {
   border-right: solid 0.2em red; }
-  article article h1 {
-    color: red; }
-  article article p {
+  article p {
     margin: 1em 0; }
 
 .message.alert {

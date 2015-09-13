@@ -1,6 +1,57 @@
-$main-color: red;
+/*********************** COLOR PALETTE *******************************/
 $alert-color: red;
 $warning-color: yellow;
+$header-color:#FBFBFB;
+$header-bg-color:#051522;
+$body-bg-color: #F4F4F4;
+$body-color:#585858;
+$h-color:#0B0F08;
+$footer-bg-color: #202121;
+
+/*********************** GLOBAL STYLE *******************************/
+html {
+  height: 100%;
+}
+
+body {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Verdana,Geneva,sans-serif;
+  line-height: 20px;
+  color: $body-color;
+  background-color: $body-bg-color;
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  color: $h-color;
+}
+
+/*********************** HEADER STYLE *******************************/
+header{
+  width:100%;
+  height:100%;
+  background: $header-bg-color url(../img/index_header_bg.jpg) scroll center;
+  background-size: cover;
+  color: $header-color;
+  overflow: hidden;
+
+  h1{
+    width:15em;
+    color: $header-color;
+    margin: 1em auto;
+  }
+}
+/*********************** MAIN STYLE *******************************/
+.main-content {
+  margin:2em;
+}
+/*********************** FOOTER STYLE *******************************/
+
+footer {
+  background-color: $footer-bg-color;
+}
 
 @mixin message {
   border-style: solid;
@@ -12,16 +63,16 @@ $warning-color: yellow;
 article {
   border-right: solid 0.2em red;
 
-  article h1 {
-    color: $main-color;
+  h1 {
+
   }
 
-  article p {
+  p {
     margin: 1em 0;
   }
 }
 
-.message{
+.message {
   &.alert {
     @include message;
     border-color: $alert-color;
