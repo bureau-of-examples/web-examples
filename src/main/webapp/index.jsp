@@ -11,7 +11,7 @@ https://www.zenwebsolutions.com/
     <jsp:attribute name="headerPlaceHolder">
 
         <div style="position: relative; top:50%; transform: translateY(-50%); text-transform: capitalize;">
-         <h1>This is header content.</h1>
+         <h1>Impressive background image</h1>
         </div>
     </jsp:attribute>
 

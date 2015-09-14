@@ -2,6 +2,7 @@
 $alert-color: red;
 $warning-color: yellow;
 $header-color:#FBFBFB;
+$header-link-hover-color:#C03D12;
 $header-bg-color:#051522;
 $body-bg-color: #F4F4F4;
 $body-color:#585858;
@@ -32,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
 header{
   width:100%;
   height:100%;
-  background: $header-bg-color url(../img/index_header_bg.jpg) scroll center;
+  background: $header-bg-color url(../img/index_header_bg.jpg) fixed center;
   background-size: cover;
   color: $header-color;
   overflow: hidden;
@@ -41,6 +42,24 @@ header{
     width:15em;
     color: $header-color;
     margin: 1em auto;
+  }
+
+  nav.top-link{
+    float:right;
+    margin-right: 1em;
+    margin-top: 0.5em;
+
+    a {
+      text-decoration: none;
+      color: $header-color;
+
+      &:hover{
+        cursor: pointer;
+        color: $header-link-hover-color;
+      }
+    }
+
+
   }
 }
 /*********************** MAIN STYLE *******************************/

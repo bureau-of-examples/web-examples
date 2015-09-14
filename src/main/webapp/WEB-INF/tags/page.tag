@@ -24,7 +24,7 @@
 
 
     <header>
-        <nav style="float:right; margin-right: 1em; margin-top: 0.5em;">Links | Blog | Utilities | Examples | About</nav>
+        <nav class="top-link"><a href="#">Links</a> | <a href="#">Blog</a> | <a href="#">Utilities</a> | <a href="#">Examples</a> | <a href="#">About</a></nav>
         <jsp:invoke fragment="headerPlaceHolder" />
     </header>
 
