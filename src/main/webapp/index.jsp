@@ -10,7 +10,7 @@ https://www.zenwebsolutions.com/
 
     <jsp:attribute name="headerPlaceHolder">
 
-        <div style="position: relative; top:50%; transform: translateY(-50%); text-transform: capitalize;">
+        <div class="h1-container fade-in three">
          <h1>Impressive background image</h1>
         </div>
     </jsp:attribute>
@@ -49,6 +49,7 @@ https://www.zenwebsolutions.com/
     <jsp:body>
         This is body content.<br>
 
+        <img src="img/regular-expression.jpg" />
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam assumenda cupiditate dolor eligendi
             error explicabo fuga fugit iste, minima minus officia omnis sit totam voluptates. Beatae nobis quod
             sapiente.</p>

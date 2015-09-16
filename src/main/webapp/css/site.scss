@@ -1,12 +1,12 @@
 /*********************** COLOR PALETTE *******************************/
 $alert-color: red;
 $warning-color: yellow;
-$header-color:#FBFBFB;
-$header-link-hover-color:#C03D12;
-$header-bg-color:#051522;
+$header-color: #FBFBFB;
+$header-link-hover-color: #C03D12;
+$header-bg-color: #051522;
 $body-bg-color: #F4F4F4;
-$body-color:#585858;
-$h-color:#0B0F08;
+$body-color: #585858;
+$h-color: #0B0F08;
 $footer-bg-color: #202121;
 
 /*********************** GLOBAL STYLE *******************************/
@@ -17,7 +17,7 @@ html {
 body {
   font-size: 14px;
   font-weight: 400;
-  font-family: Verdana,Geneva,sans-serif;
+  font-family: Verdana, Geneva, sans-serif;
   line-height: 20px;
   color: $body-color;
   background-color: $body-bg-color;
@@ -29,47 +29,105 @@ h1, h2, h3, h4, h5, h6 {
   color: $h-color;
 }
 
+/* source: https://fabriceleven.com/design/creating-fancy-css3-fade-in-animations-on-page-load/ */
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  animation:fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  animation-fill-mode:forwards; /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  animation-duration:1s;
+
+  &.one {
+    animation-delay: 0.7s;
+  }
+
+  &.two {
+    animation-delay: 1.2s;
+  }
+
+  &.three {
+    animation-delay: 1.6s;
+  }
+}
+
+
+
 /*********************** HEADER STYLE *******************************/
-header{
-  width:100%;
-  height:100%;
+header {
+  width: 100%;
+  height: 100%;
   background: $header-bg-color url(../img/index_header_bg.jpg) fixed center;
   background-size: cover;
   color: $header-color;
   overflow: hidden;
 
-  h1{
-    width:15em;
-    color: $header-color;
-    margin: 1em auto;
+  .h1-container{
+    overflow: hidden;
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+    text-transform: capitalize;
+    text-align: center;
+    width:100%;
   }
 
-  nav.top-link{
-    float:right;
-    margin-right: 1em;
-    margin-top: 0.5em;
+  h1 {
+    color: $header-color;
+    line-height: 1.2em;
+    font-size: 2.5em;
+  }
 
-    a {
-      text-decoration: none;
-      color: $header-color;
+  nav {
 
-      &:hover{
-        cursor: pointer;
-        color: $header-link-hover-color;
+    &.top-link {
+      float: right;
+      margin: 0.5em 1em;
+
+      a {
+        text-decoration: none;
+        color: $header-color;
+
+        &:hover {
+          cursor: pointer;
+          color: $header-link-hover-color;
+        }
       }
     }
+    &.site-link {
+      text-transform: uppercase;
+      float: left;
+      margin: 0.5em 1em;
 
+      a {
+        text-decoration: none;
+        color: $header-color;
+        font-weight: 600;
 
+        &:hover{
+          cursor: pointer;
+          color: $header-link-hover-color;
+        }
+      }
+
+    }
   }
+
 }
+
 /*********************** MAIN STYLE *******************************/
 .main-content {
-  margin:2em;
+  margin: 2em;
 }
+
 /*********************** FOOTER STYLE *******************************/
 
 footer {
   background-color: $footer-bg-color;
+  padding: 1em;
 }
 
 @mixin message {
