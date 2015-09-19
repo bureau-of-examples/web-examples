@@ -66,16 +66,24 @@
         <div class="main-content">
 
         <article>
-            <h1>This is the title</h1>
-            <div>this is some random text</div>
-            <div>this is some random text</div>
-            <div>this is some random text</div>
-            <div>this is some random text</div>
-            <div>this is some random text</div>
+            <h1>Demo Websites</h1>
+
+            <div class="list-group">
+                <a href="simpleshop/" class="list-group-item">
+                    <h4 class="list-group-item-heading">Simple Shop</h4>
+                    <p class="list-group-item-text">Demo website 1.</p>
+                </a>
+                <a href="FitnessTracker/login.html" class="list-group-item">
+                    <h4 class="list-group-item-heading">Fitness Tracker</h4>
+                    <p class="list-group-item-text">Demo website 2.</p>
+                </a>
+                <a href="EventTracker/" class="list-group-item">
+                    <h4 class="list-group-item-heading">Event Tracker</h4>
+                    <p class="list-group-item-text">Demo website 3.</p>
+                </a>
+            </div>
 
         </article>
-
-
 
         <p>Impedit ullam, voluptatibus? Architecto, aspernatur culpa debitis ea eos facere fuga fugiat illum in iusto
             minima mollitia nemo neque non omnis optio quam repellat similique sint sit ut velit voluptas!</p>
