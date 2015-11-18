@@ -200,6 +200,23 @@
             </div>
         </div>
 
+
+        <hr>
+
+        <div id="tooltipTest" class="row">
+
+            <div class="col-md-6 col-md-offset-3">
+
+                <p>
+                    For performance reasons, the Tooltip and Popover data-apis are opt-in,
+                    meaning you must <a href="#" data-toggle="tooltip" data-placement="top" title="Use: $('[data-toggle=&quot;tooltip&quot;]').tooltip()">initialize</a> them yourself.
+                </p>
+            </div>
+        </div>
+
+        <hr>
+
+
     </section>
 
     <footer>
@@ -221,6 +238,12 @@
     $("#btnTabTest").click(function () {
         $("[href=#tabPage2]").tab("show");
     });
+
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip({
+            template: '<div class="tooltip" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner my-tip"></div></div>'
+        })
+    })
 
 </script>
 </body>
