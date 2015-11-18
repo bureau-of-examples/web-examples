@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,IAAK;EACH,gBAAgB,EAAE,OAAO;EACzB,UAAU,EAAE,MAAM;;AAIpB,sBAAuB;EACrB,OAAO,EAAC,GAAG;;AAGb,gBAAgB;EACd,MAAM,EAAE,GAAG;EACX,UAAU,EAAE,MAAM;EAClB,QAAQ,EAAC,QAAQ;;AAGnB,MAAM;EACJ,SAAS,EAAE,KAAK;EAChB,WAAW,EAAE,GAAG;EAChB,UAAU,EAAE,MAAM;;AAGpB,kBAAiB;EACf,UAAU,EAAE,IAAI",
+"sources": ["bootstrap-test.scss"],
+"names": [],
+"file": "bootstrap-test.css"
+}

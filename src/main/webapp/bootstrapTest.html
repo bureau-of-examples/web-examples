@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-test.css">
+    <title>Test Page</title>
+</head>
+<body>
+
+<div class="container-fluid">
+    <header>
+
+    </header>
+
+    <section>
+
+        <hr>
+
+        <div id="toggleText" class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Toggle collapse test
+                        <a class="btn btn-default" href="#" data-toggle="collapse" data-target="#collapseDiv">Click To
+                            Toggle</a>
+                    </div>
+                    <div id="collapseDiv" class="panel-collapse in">
+                        <div class="panel-body">
+                            This is the content of the collapse.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div id="modalTest" class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <a class="btn btn-default" data-toggle="modal" data-target="#modalDiv">Open</a>
+
+                <div id="modalDiv" class="modal fade" tabindex="-1">
+                    <div class="modal-dialog modal-sm">
+
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                        aria-hidden="true">&times;</span></button>
+                                <h4>Hello Bootstrap</h4>
+                            </div>
+
+                            <div class="modal-body">
+                                <div>A small modal message box</div>
+                            </div>
+
+                            <div class="modal-footer"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div id="dropdownTest" class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="dropdown">
+                    <button class="btn btn-default" data-toggle="dropdown">Dropdown Trigger <span class="caret"></span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-menu-content">
+                            <span>This is dropdown content.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div id="scrollSpyTest" class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="panel panel-default">
+
+                    <nav id="spying-nav" class="navbar navbar-inverse" role="navigation">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#part1">Section 1</a></li>
+                            <li><a href="#part2">Section 2</a></li>
+                            <li><a href="#part3">Section 3</a></li>
+                            <li><a href="#part4">Section 4</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="panel-body panel-scrolling" data-spy="scroll" data-target="#spying-nav"
+                         data-offset="70">
+
+                        <p><a id="part1">Part 1</a></p>
+                        Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold
+                        out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit
+                        seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg
+                        hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes
+                        anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco
+                        consequat.
+
+                        Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork beard. Freegan beard aliqua
+                        cupidatat mcsweeney's vero. Cupidatat four loko nisi, ea helvetica nulla carles. Tattooed cosby
+                        sweater food truck, mcsweeney's quis non freegan
+
+                        <p><a id="part2">Part 2</a></p>
+                        Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold
+                        out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit
+                        seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg
+                        hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes
+                        anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco
+                        consequat.
+
+                        Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork beard. Freegan beard aliqua
+                        cupidatat mcsweeney's vero. Cupidatat four loko nisi, ea helvetica nulla carles. Tattooed cosby
+                        sweater food truck, mcsweeney's quis non freegan
+
+                        <p><a id="part3">Part 3</a></p>
+                        Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold
+                        out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit
+                        seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg
+                        hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes
+                        anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco
+                        consequat.
+
+                        Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork beard. Freegan beard aliqua
+                        cupidatat mcsweeney's vero. Cupidatat four loko nisi, ea helvetica nulla carles. Tattooed cosby
+                        sweater food truck, mcsweeney's quis non freegan
+
+                        <p><a id="part4">Part 4</a></p>
+                        Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold
+                        out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit
+                        seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg
+                        hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes
+                        anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco
+                        consequat.
+
+                        Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork beard. Freegan beard aliqua
+                        cupidatat mcsweeney's vero. Cupidatat four loko nisi, ea helvetica nulla carles. Tattooed cosby
+                        sweater food truck, mcsweeney's quis non freegan
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div id="tabTest" class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="well-lg">
+                    <button class="btn btn-default" id="btnTabTest">Go to tabpage 2</button>
+                </div>
+
+                <div id="tabControl">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active">
+                            <a href="#tabPage1" role="tab" data-toggle="tab">Tab Page 1</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#tabPage2" role="tab" data-toggle="tab">Tab Page 2</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#tabPage3" role="tab" data-toggle="tab">Tab Page 3</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="tabPage1" role="tabpanel" class="tab-pane active">
+                            <div class="panel panel-info">
+                                <div class="panel-body">
+                                    This is tab page 1
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tabPage2" role="tabpanel" class="tab-pane">
+                            <div class="panel panel-info">
+                                <div class="panel-body">
+                                    This is tab page 2
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tabPage3" role="tabpanel" class="tab-pane">
+                            <div class="panel panel-info">
+                                <div class="panel-body">
+                                    This is tab page 3
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+
+    </footer>
+</div>
+
+<script src="components/jquery/dist/jquery.min.js"></script>
+<script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script>
+
+    $('#spying-nav').on('activate.bs.scrollspy', function (event) {
+        var targetId = $(event.target).find("a").attr("href");
+        if (targetId) {
+            $(targetId).addClass("solid");
+        }
+    });
+
+    $("#btnTabTest").click(function () {
+        $("[href=#tabPage2]").tab("show");
+    });
+
+</script>
+</body>
+</html>

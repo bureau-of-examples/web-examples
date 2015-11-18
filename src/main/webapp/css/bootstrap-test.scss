@@ -1,0 +1,25 @@
+body {
+  background-color: #fcfcfc;
+  overflow-x: hidden;
+
+}
+
+.dropdown-menu-content {
+  padding:1em;
+}
+
+.panel-scrolling{
+  height: 8em;
+  overflow-y: scroll;
+  position:relative;
+}
+
+.solid{
+  font-size: 1.2em;
+  font-weight: 600;
+  transition: all 1s;
+}
+
+.tab-pane>.panel {
+  border-top: none;
+}
