@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.1"
+        xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd">
+    <tlib-version>1.0</tlib-version>
+    <short-name>zcl-jstl-functions</short-name>
+    <uri>https://github.com/bureau-of-examples/web-examples/functions</uri> <!--uri used to import the functions-->
+
+    <function>
+        <name>peek</name>
+        <function-class>zhy2002.webexamples.infrastructure.JstlFunctions</function-class>
+        <function-signature>java.lang.Object peek(zhy2002.webexamples.infrastructure.PageValueStackBean,java.lang.String)</function-signature>
+    </function>
+
+    <function>
+        <name>pop</name>
+        <function-class>zhy2002.webexamples.infrastructure.JstlFunctions</function-class>
+        <function-signature>java.lang.Object pop(zhy2002.webexamples.infrastructure.PageValueStackBean,java.lang.String)</function-signature>
+    </function>
+
+    <function>
+        <name>push</name>
+        <function-class>zhy2002.webexamples.infrastructure.JstlFunctions</function-class>
+        <function-signature>void push(zhy2002.webexamples.infrastructure.PageValueStackBean,java.lang.String,java.lang.Object)</function-signature>
+    </function>
+
+    <function>
+        <name>exists</name>
+        <function-class>zhy2002.webexamples.infrastructure.JstlFunctions</function-class>
+        <function-signature>boolean exists(zhy2002.webexamples.infrastructure.PageValueStackBean,java.lang.String)</function-signature>
+    </function>
+</taglib>

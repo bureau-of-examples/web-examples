@@ -1,5 +1,6 @@
 <%@tag pageEncoding="UTF-8" language="java" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="f" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@attribute name="title" type="java.lang.String" %>
 <%@attribute name="headPlaceHolder" fragment="true" required="false" %>
 <%@attribute name="headerPlaceHolder" fragment="true" required="false" %>
@@ -7,23 +8,26 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title><c:out value="${title}" /></title>
+    <c:out value="<a>'test'</a>" />
     <%--metadata tags--%>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <%--css and js imports--%>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
     <%--https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css--%>
     <link rel="stylesheet" type="text/css" href="<c:url value="/css/site.css" />">
 
-    <title>${title}</title>
-
     <jsp:invoke fragment="headPlaceHolder" />
 </head>
 <body>
+        <a href="<c:url value="test.html">
+            <c:param name="v1" value="<abc>" />
+        </c:url>" >Test2</a>
 
-
-
-    <header>
+         <div> the value is: ${f:escapeXml("\"ab'\\<c>'d\"")} </div>
+        <header>
         <nav class="site-link"><a href=" " >starloop.space</a></nav>
         <nav class="top-link"><a href="#">Links</a> | <a href="#">Blog</a> | <a href="#">Utilities</a> | <a href="#">Examples</a> | <a href="#">About</a></nav>
         <jsp:invoke fragment="headerPlaceHolder" />
