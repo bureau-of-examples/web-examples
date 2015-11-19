@@ -50,3 +50,19 @@ public class UrlRewriteFilter implements Filter {
 
     }
 }
+/*
+    How to config:
+    <filter>
+        <filter-name>urlRewriteFilter</filter-name>
+        <filter-class>zhy2002.webexamples.infrastructure.UrlRewriteFilter</filter-class>
+        <init-param>
+            <param-name>newExtension</param-name>
+            <param-value>jsp</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>urlRewriteFilter</filter-name>
+        <url-pattern>*.html</url-pattern>
+    </filter-mapping>
+
+ */

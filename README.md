@@ -1,5 +1,7 @@
-zcl.js
+Web Examples
 ==============
+This is an example JSP website with Bootstrap 3 as the css framework.
+
 Some useful JavaScript code I wrote for future reference.
 
 1. How to set up a work copy:

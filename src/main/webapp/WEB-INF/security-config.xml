@@ -13,7 +13,6 @@
             <security:intercept-url pattern="/js/**" access="permitAll()"/>
             <security:intercept-url pattern="/favicon.ico" access="permitAll()"/>
             <security:intercept-url pattern="/**" access="hasRole('ROLE_USER')"/><!--this has to be the last one-->
-
             <security:http-basic />
         </security:http>
 

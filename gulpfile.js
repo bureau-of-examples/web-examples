@@ -1,5 +1,7 @@
 "use strict";
-
+/*
+ * gulp tasks are defined here.
+ */
 var gulp = require('gulp');
 var connect = require('gulp-connect'); //run a local dev web server
 var open = require('gulp-open'); //open a url in a web browser
