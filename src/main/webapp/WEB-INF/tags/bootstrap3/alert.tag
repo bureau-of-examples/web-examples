@@ -3,10 +3,18 @@
 <%@tag pageEncoding="UTF-8" language="java" trimDirectiveWhitespaces="true" %>
 <%@attribute name="alertType" type="java.lang.String" %>
 <%@attribute name="elementClass" type="java.lang.String" %>
+<%@attribute name="canRemove" type="java.lang.Boolean" %>
 
 <c:set var="alertType" value="${empty alertType ? 'danger' : alertType}" />
-
-<div class="alert alert-${alertType} ${elementClass}" role="alert">
+<c:if test="${canRemove}" >
+    <c:set var="elementClass" value="alert-dismissible ${elementClass}" />
+</c:if>
+<div class="alert alert-${alertType} ${empty elementClass ? '' : ' '} ${elementClass}" role="alert">
+    <c:if test="${canRemove}" >
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </c:if>
     <comm:push value="alert" var="parentTagName" />
     <jsp:doBody />
     <comm:pop var="parentTagName" />

@@ -18,15 +18,24 @@
 <c:if test="${dropup}">
     <c:set var="css" value="dropup"/>
 </c:if>
+<c:set var="wrapperElementName" value="div" />
+<c:set var="buttonElementName" value="button" />
 <comm:peek var="parentTagName" />
-<c:if test="${f:startsWith(parentTagName, 'buttongroup')}">
-    <c:if test="${css == 'dropdown'}">
-        <c:set var="css" value="btn-group" />
-    </c:if>
-    <c:if test="${css != 'dropdown'}">
-        <c:set var="css" value="btn-group ${css}" />
-    </c:if>
-</c:if>
+<c:choose>
+    <c:when test="${f:startsWith(parentTagName, 'buttongroup')}">
+        <c:if test="${css == 'dropdown'}">
+            <c:set var="css" value="btn-group" />
+        </c:if>
+        <c:if test="${css != 'dropdown'}">
+            <c:set var="css" value="btn-group ${css}" />
+        </c:if>
+    </c:when>
+    <c:when test="${f:startsWith(parentTagName, 'navbar')}" >
+        <c:set var="wrapperElementName" value="li" />
+        <c:set var="buttonElementName" value="a" />
+    </c:when>
+</c:choose>
+
 <c:set var="css" value="${css} ${elementClass}"/>
 <c:if test="${menuOpenOnLoad}">
     <c:set var="css" value="${css} open"/>
@@ -37,14 +46,14 @@
     <c:set var="menuClass" value="${menuClass} dropdown-menu-right"/>
 </c:if>
 
-<div class="${css}"
+<${wrapperElementName} class="${css}"
      <c:if test="${not empty elementId}">id="${elementId}"</c:if> >
-    <button class="btn btn-${buttonClass} dropdown-toggle" type="button"
+    <${buttonElementName} class="<c:if test="${buttonElementName == 'button'}"> btn btn-${buttonClass} </c:if> ${' '} dropdown-toggle" ${buttonElementName == "button" ? 'type="button"' : 'href="#"' }
             <c:if test="${not empty elementId}">id="${elementId}_btn"</c:if> data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
+            aria-expanded="false" role="button">
         <c:out value="${title} "/>
         <span class="caret"></span>
-    </button>
+    </${buttonElementName}>
     <ul class="${menuClass}" <c:if test="${not empty elementId}">aria-labelledby="${elementId}_btn"</c:if>>
         <comm:push value="dropdown" var="parentTagName"/>
         <c:if test="${not empty itemTemplate}">
@@ -59,4 +68,4 @@
         </c:if>
         <comm:pop var="parentTagName"/>
     </ul>
-</div>
+</${wrapperElementName}>

@@ -15,7 +15,6 @@
 <c:set var="elementClass" value="${empty elementClass ? 'default' : elementClass}"/>
 <c:if test="${collapse}">
     <comm:pageUniqueId var="collapseDivId"/>
-    <c:set var="collapseDivId" value="_auto_id${collapseDivId}"/>
 </c:if>
 <c:if test="${empty headerClass and collapse}">
     <c:set var="headerClass" value="cursor-pointer"/>

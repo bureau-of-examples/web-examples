@@ -16,7 +16,6 @@
 
 <c:if test="${collapse}">
     <comm:pageUniqueId var="collapseDivId"/>
-    <c:set var="collapseDivId" value="_auto_id${collapseDivId}"/>
 </c:if>
 <c:set var="wrapInPanel" value="${false}" />
 <c:if test="${not empty panelHeadingTemplate or not empty panelBodyTemplate}">

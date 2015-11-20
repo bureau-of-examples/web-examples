@@ -5,7 +5,7 @@
 
 <%@attribute name="var" type="java.lang.String" rtexprvalue="false" required="true" %>
 <%@ variable alias="result" name-from-attribute="var" scope="AT_END" %>
-<jsp:useBean id="pageUniqueId" class="java.util.concurrent.atomic.AtomicInteger" scope="page" />
+<jsp:useBean id="pageUniqueId" class="java.util.concurrent.atomic.AtomicInteger" scope="request" />
 
-<c:set var="result" value="${pageUniqueId.andIncrement}" />
+<c:set var="result" value="_auto_id${pageUniqueId.andIncrement}" />
 
