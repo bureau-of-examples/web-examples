@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": ";AAIE,yBAAa;EACX,OAAO,EAAE,IAAI;AAIb,qCAAe;EACb,OAAO,EAAE,IAAI;AAEf,mCAAa;EACX,OAAO,EAAE,KAAK;;;AAMpB,eAAgB;EACd,MAAM,EAAE,OAAO",
+"sources": ["bootstrap3-tags.scss"],
 "names": [],
 "file": "bootstrap3-tags.css"
 }

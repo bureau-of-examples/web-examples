@@ -1,0 +1,22 @@
+/*panel style*/
+
+.panel-title {
+
+  .expand-icon {
+    display: none;
+  }
+
+  &.collapsed {
+    .collapse-icon {
+      display: none;
+    }
+    .expand-icon {
+      display: block;
+    }
+  }
+}
+
+/*helper classes*/
+.cursor-pointer {
+  cursor: pointer;
+}

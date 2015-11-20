@@ -1,3 +1,13 @@
+/*panel style*/
+.panel-title .expand-icon {
+  display: none; }
+.panel-title.collapsed .collapse-icon {
+  display: none; }
+.panel-title.collapsed .expand-icon {
+  display: block; }
 
+/*helper classes*/
+.cursor-pointer {
+  cursor: pointer; }
 
 /*# sourceMappingURL=bootstrap3-tags.css.map */
