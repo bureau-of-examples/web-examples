@@ -51,7 +51,7 @@
     </button>
 
     <ul class="${menuClass}" <c:if test="${not empty elementId}">aria-labelledby="${elementId}_btn"</c:if>>
-        <comm:push value="dropdown" var="parentTagName"/>
+        <comm:push value="buttondropdown" var="parentTagName"/>
         <c:if test="${not empty itemTemplate}">
             <c:forEach items="${items}" var="item">
                 <jsp:invoke fragment="itemTemplate"/>
