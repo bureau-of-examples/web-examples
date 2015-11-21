@@ -1,4 +1,4 @@
-/*panel style*/
+/****************************** PANEL STYLE ********************************/
 .panel-title .expand-icon {
   display: none; }
 .panel-title.collapsed .collapse-icon {
@@ -6,7 +6,7 @@
 .panel-title.collapsed .expand-icon {
   display: block; }
 
-/*helper classes*/
+/****************************** HELPER CLASSES ********************************/
 .cursor-pointer {
   cursor: pointer; }
 
