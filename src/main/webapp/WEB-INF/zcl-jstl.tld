@@ -26,4 +26,12 @@
         <name>pageUniqueId</name>
         <path>/WEB-INF/tags/common/pageUniqueId.tag</path>
     </tag-file>
+    <tag-file>
+        <name>htmlMetaTags</name>
+        <path>/WEB-INF/tags/common/htmlMetaTags.tag</path>
+    </tag-file>
+    <tag-file>
+        <name>dynamicAttributes</name>
+        <path>/WEB-INF/tags/common/dynamicAttributes.tag</path>
+    </tag-file>
 </taglib>

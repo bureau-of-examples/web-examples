@@ -1,11 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
 
-
-<!--
-https://www.zenwebsolutions.com/
--->
-
 <t:page title="test1">
 
     <jsp:attribute name="headerPlaceHolder">
@@ -93,7 +88,6 @@ https://www.zenwebsolutions.com/
         <p>A accusantium aperiam architecto autem culpa dicta doloremque, ducimus eius eligendi est expedita fugiat
             ipsam molestias nam nobis pariatur, qui reiciendis tenetur totam voluptatum. Commodi illum laboriosam nulla
             quod sit.</p>
-
 
     </jsp:body>
 

@@ -9,7 +9,6 @@
 <html>
 <head>
     <title><c:out value="${title}" /></title>
-    <c:out value="<a>'test'</a>" />
     <%--metadata tags--%>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,12 +21,8 @@
     <jsp:invoke fragment="headPlaceHolder" />
 </head>
 <body>
-        <a href="<c:url value="test.html">
-            <c:param name="v1" value="<abc>" />
-        </c:url>" >Test2</a>
 
-         <div> the value is: ${f:escapeXml("\"ab'\\<c>'d\"")} </div>
-        <header>
+    <header>
         <nav class="site-link"><a href=" " >starloop.space</a></nav>
         <nav class="top-link"><a href="#">Links</a> | <a href="#">Blog</a> | <a href="#">Utilities</a> | <a href="#">Examples</a> | <a href="#">About</a></nav>
         <jsp:invoke fragment="headerPlaceHolder" />

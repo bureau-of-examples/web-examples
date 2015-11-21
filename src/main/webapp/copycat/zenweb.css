@@ -1,0 +1,26 @@
+/******************************* GLOBALS **********************************/
+html {
+  font-family: sans-serif;
+  height: 100%; }
+
+body {
+  color: #2a2a2a;
+  font: normal 300 1.125em "museo-sans",sans-serif;
+  height: 100%; }
+
+/******************************* TOP NAV **********************************/
+.nav-container {
+  transition: background-color 0.3s linear 0s;
+  width: 100%;
+  text-align: center;
+  background-color: transparent;
+  position: fixed;
+  top: 0; }
+
+/******************************* BANNER **********************************/
+.home-banner {
+  background-image: url("img/zenweb-banner.jpg");
+  background-size: cover;
+  height: 100%; }
+
+/*# sourceMappingURL=zenweb.css.map */

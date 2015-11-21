@@ -9,9 +9,12 @@
 		http://www.springframework.org/schema/security/spring-security.xsd">
 
         <security:http auto-config="true" use-expressions="true">
-            <security:intercept-url pattern="/css/**" access="permitAll()"/>
-            <security:intercept-url pattern="/js/**" access="permitAll()"/>
-            <security:intercept-url pattern="/favicon.ico" access="permitAll()"/>
+            <security:intercept-url pattern="*.scss" access="denyAll()"/>
+            <security:intercept-url pattern="/css" access="permitAll()"/>
+            <security:intercept-url pattern="/js" access="permitAll()"/>
+            <security:intercept-url pattern="/img" access="permitAll()"/>
+            <security:intercept-url pattern="/examples" access="permitAll()"/>
+            <security:intercept-url pattern="/" access="permitAll()"/>
             <security:intercept-url pattern="/**" access="hasRole('ROLE_USER')"/><!--this has to be the last one-->
             <security:http-basic />
         </security:http>

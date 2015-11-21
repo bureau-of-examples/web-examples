@@ -28,7 +28,7 @@
     </listener>
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>/WEB-INF/security-config.xml</param-value>
+        <param-value>classpath:security-config.xml</param-value>
     </context-param>
 
     <filter>
