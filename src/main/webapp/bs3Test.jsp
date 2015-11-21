@@ -17,7 +17,9 @@
                 </div>
             </header>
             <section class="main">
-                <h3>Navbar Test <small>multiple navbarbrands and navbarnavs</small></h3>
+                <h3>Navbar Test
+                    <small>multiple navbarbrands and navbarnavs</small>
+                </h3>
                 <div class="row">
                     <div class="col-md-12">
                         <bs3:navbar>
@@ -61,7 +63,9 @@
                     </div>
                 </div>
 
-                <h3>Navbar Test <small>inverse color and static top position</small></h3>
+                <h3>Navbar Test
+                    <small>inverse color and static top position</small>
+                </h3>
                 <div class="row">
                     <div class="col-md-12">
                         <bs3:navbar inverse="true" position="static-top">
@@ -106,7 +110,9 @@
                 </div>
 
                 <hr>
-                <h3>Text Formatting test <small>samp, pre, kbd and code</small></h3>
+                <h3>Text Formatting test
+                    <small>samp, pre, kbd and code</small>
+                </h3>
                 <div class="row">
                     <div class="col-md-3">
                         <p>Use &lt;samp&gt; to output mono-spaced text:</p>
@@ -117,7 +123,7 @@
                         </samp>
                     </div>
                     <div class="col-md-3">
-                        <pre >
+                        <pre>
 Use &lt;pre&gt; to preserve original text formatting:
 Lorem ipsum dolor sit amet,
 consectetur adipisicing elit.
@@ -142,7 +148,9 @@ Error incidunt iusto ullam. Alias, eveniet?
                             <var>y</var> = <var>m</var><var>x</var> + <var>b</var></p>
                     </div>
                 </div>
+
                 <hr>
+                <h3>Block quotes, use &lt;cite&gt; to speicify the source</h3>
                 <div class="row">
                     <div class="col-md-6">
                         <bs3:blockquote
@@ -162,6 +170,8 @@ Error incidunt iusto ullam. Alias, eveniet?
                     </div>
                 </div>
 
+                <hr>
+                <h3>Alerts - dismissible alerts can be removed from dom</h3>
                 <div class="row">
                     <div class="col-md-4">
                         <bs3:alert canRemove="true" elementClass="fade in">
@@ -180,6 +190,8 @@ Error incidunt iusto ullam. Alias, eveniet?
                     </div>
                 </div>
 
+                <hr>
+                <h3>Formatting tables</h3>
                 <div class="row">
                     <div class="col-md-3">
                         <bs3:tableframe title="My Table">
@@ -300,129 +312,132 @@ Error incidunt iusto ullam. Alias, eveniet?
                         </bs3:tableframe>
                         </h3>
                     </div>
+                </div>
 
-                    <hr>
+                <hr>
+                <h3>Panels</h3>
+                <div class="row">
+                    <div class="col-md-3">
 
-                    <div class="row">
-                        <div class="col-md-3">
+                        <bs3:panel title="My Panel1" collapse="true">
+                            This panel can collapse.
+                        </bs3:panel>
 
+                    </div>
 
-                            <bs3:panel title="My Panel1" collapse="true">
-                                This is a panel which can collapse.
-                            </bs3:panel>
+                    <div class="col-md-3">
 
-                        </div>
+                        <bs3:panel>
+                            Hello world!
+                        </bs3:panel>
 
-                        <div class="col-md-3">
+                    </div>
 
-                            <bs3:panel>
-                                Hello world!
-                            </bs3:panel>
+                    <div class="col-md-3">
 
-                        </div>
-
-                        <div class="col-md-3">
-
-                            <bs3:panel>
+                        <bs3:panel>
                             <jsp:attribute name="footerTemplate">
                                 This one has footer.
                             </jsp:attribute>
-                                <jsp:body>
-                                    Hello world!
-                                </jsp:body>
-                            </bs3:panel>
+                            <jsp:body>
+                                Hello world!
+                            </jsp:body>
+                        </bs3:panel>
 
-                        </div>
+                    </div>
 
-                        <div class="col-md-3">
+                    <div class="col-md-3">
 
-                            <bs3:panel icon="knight">
+                        <bs3:panel icon="knight">
                             <jsp:attribute name="headerTemplate">
                                 <a href="#">Test</a>
                             </jsp:attribute>
-                                <jsp:body>
-                                    A panel with icon.
-                                </jsp:body>
-                            </bs3:panel>
-
-                        </div>
+                            <jsp:body>
+                                A panel with icon.
+                            </jsp:body>
+                        </bs3:panel>
 
                     </div>
 
-                    <hr>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <bs3:dropdown items="${list.cars}" var="item" title="Dropdown1">
+                </div>
+
+                <hr>
+                <div class="container">
+                    <h3>Dorpdown and dropup</h3>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <bs3:dropdown items="${list.cars}" var="item" title="Dropdown1">
                             <jsp:attribute name="itemTemplate">
                                      <li><a href="#">${item}</a></li>
                             </jsp:attribute>
-                                </bs3:dropdown>
-                            </div>
-                            <div class="col-md-3">
-                                <bs3:dropdown items="${list.cars}" var="item" title="Dropdown2" buttonClass="primary"
-                                              menuOpenOnLoad="true">
+                            </bs3:dropdown>
+                        </div>
+                        <div class="col-md-3">
+                            <bs3:dropdown items="${list.cars}" var="item" title="Open On Load" buttonClass="primary"
+                                          menuOpenOnLoad="true">
                             <jsp:attribute name="itemTemplate">
                                      <li class="disabled"><a href="#">${item}</a></li>
                             </jsp:attribute>
-                                </bs3:dropdown>
-                            </div>
-                            <div class="col-md-3">
-                                <bs3:dropdown items="${list.cars}" var="item" title="Dropup1" dropup="true">
+                            </bs3:dropdown>
+                        </div>
+                        <div class="col-md-3">
+                            <bs3:dropdown items="${list.cars}" var="item" title="Dropup1" dropup="true">
                             <jsp:attribute name="itemTemplate">
                                      <li><a href="#">${item}</a></li>
                             </jsp:attribute>
-                                </bs3:dropdown>
-                            </div>
+                            </bs3:dropdown>
                         </div>
                     </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="btn-toolbar" role="toolbar" aria-label="...">
+                </div>
 
-                                <bs3:buttongroup var="item" items="${list.cars}" buttonClass="primary">
+                <!--vertical spacing-->
+                <div style="width:1px; height:10em;"></div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-12">
+                        <bs3:toolbar >
+                            <bs3:buttongroup var="item" items="${list.cars}" buttonClass="default">
                             <jsp:attribute name="itemTemplate">
                                 ${item.model}
                             </jsp:attribute>
-                                </bs3:buttongroup>
+                            </bs3:buttongroup>
 
-                                <bs3:buttongroup var="item" items="${list.cars}" size="sm">
-                            <jsp:attribute name="itemTemplate">
-                               ${item}
-                            </jsp:attribute>
-                                </bs3:buttongroup>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <br>
-
-                    <div class="row">
-                        <div class="col-md-2">
-                            <bs3:buttongroup var="item" items="${list.cars}" isVertical="true">
+                            <bs3:buttongroup var="item" items="${list.cars}" buttonClass="primary">
                             <jsp:attribute name="itemTemplate">
                                ${item}
                             </jsp:attribute>
                             </bs3:buttongroup>
-                        </div>
+                        </bs3:toolbar>
+                    </div>
+                </div>
 
-                        <div class="col-md-10">
-                            <bs3:buttongroup var="item" items="${list.cars}" wrapItem="false">
+                <hr>
+                <h3>Button groups</h3>
+                <div class="row">
+                    <div class="col-md-3">
+                        <bs3:buttongroup var="item" items="${list.cars}" isVertical="true">
+                            <jsp:attribute name="buttonAttributesTemplate">
+                                onclick="alert('make is ${item.make}')"
+                            </jsp:attribute>
+                            <jsp:attribute name="itemTemplate">
+                               ${item}
+                            </jsp:attribute>
+                        </bs3:buttongroup>
+                    </div>
+
+                    <div class="col-md-9">
+                        <bs3:buttongroup var="item" items="${list.cars}" >
                             <jsp:attribute name="itemTemplate">
                                <bs3:button>${item}</bs3:button>
                             </jsp:attribute>
-                            </bs3:buttongroup>
-                        </div>
-
+                        </bs3:buttongroup>
                     </div>
 
-                    <br>
+                </div>
 
-                    <div class="row">
-                        <div class="col-md-6">
-                            <bs3:buttongroupframe>
+                <div class="row">
+                    <div class="col-md-6">
+                        <bs3:buttongroupframe>
                             <jsp:attribute name="contentTemplate">
                                 <bs3:button>
                                     Button1
@@ -436,10 +451,10 @@ Error incidunt iusto ullam. Alias, eveniet?
                                     </jsp:attribute>
                                 </bs3:dropdown>
                             </jsp:attribute>
-                            </bs3:buttongroupframe>
-                        </div>
-                        <div class="col-md-6">
-                            <bs3:buttongroupframe isJustified="true">
+                        </bs3:buttongroupframe>
+                    </div>
+                    <div class="col-md-6">
+                        <bs3:buttongroupframe isJustified="true">
                             <jsp:attribute name="contentTemplate">
                                 <bs3:buttongroupframe>
                                     <jsp:attribute name="contentTemplate">
@@ -465,27 +480,33 @@ Error incidunt iusto ullam. Alias, eveniet?
                                     </jsp:attribute>
                                 </bs3:buttongroupframe>
                             </jsp:attribute>
-                            </bs3:buttongroupframe>
-                        </div>
+                        </bs3:buttongroupframe>
                     </div>
+                </div>
 
-                    <div class="row">
-                        <div class="col-md-12">
-                            <bs3:buttondropdown var="item" items="${list.cars}" title="Cars" split="true">
+                <hr>
+                <h3>BUtton dropdowns</h3>
+                <div class="row">
+                    <div class="col-md-12">
+                        <bs3:buttondropdown var="item" items="${list.cars}" title="Cars" split="true">
                             <jsp:attribute name="itemTemplate">
                                 <li><a href="#">${item.model}</a></li>
                             </jsp:attribute>
-                            </bs3:buttondropdown>
+                        </bs3:buttondropdown>
 
-                            <bs3:buttondropdown var="item" items="${list.cars}" title="Cars" size="lg">
+                        <bs3:buttondropdown var="item" items="${list.cars}" title="Cars" size="lg">
                             <jsp:attribute name="itemTemplate">
                                 <li><a href="#">${item.model}</a></li>
                             </jsp:attribute>
-                            </bs3:buttondropdown>
-                        </div>
+                        </bs3:buttondropdown>
                     </div>
+                </div>
             </section>
             <footer>
+                <hr>
+                <div class="row">
+                    <div style="width:1px; height:5em"></div>
+                </div>
             </footer>
         </div>
 
