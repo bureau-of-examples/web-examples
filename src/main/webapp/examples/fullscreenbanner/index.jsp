@@ -1,20 +1,25 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%--
 
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@taglib prefix="std" tagdir="/WEB-INF/tags/standalone" %>
+
 <c:set var="contextPath" value="${pageContext.request.contextPath}"/>
 <html>
 <head>
     <title>Full Screen Banner Example</title>
     <link rel="stylesheet" href="${contextPath}/components/normalize-css/normalize.css">
+    <link rel="stylesheet" href="${contextPath}/css/standalone.css" />
     <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
 <div>
     <header>
         <div class="home-banner">
-            <div class="top-left-content">Top left content</div>
+            <div class="top-left-content">
+                <std:buttonTransparent >
+                    Transparent Button
+                </std:buttonTransparent>
+            </div>
             <div class="top-right-content">Top right content</div>
             <div class="center-content">
                 <h3>Full-screen Banner -

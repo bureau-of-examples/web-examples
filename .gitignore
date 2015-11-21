@@ -37,3 +37,4 @@ log/
 target/
 
 node_modules/
+*.css.map
