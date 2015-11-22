@@ -24,6 +24,9 @@ public class TestCollectionBean {
     public List<Car> getCars(){
 
         return cars;
+    }
 
+    public Object[] createObjectArray(){
+        return new Object[0];
     }
 }

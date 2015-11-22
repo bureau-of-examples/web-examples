@@ -17,6 +17,48 @@
                 </div>
             </header>
             <section class="main">
+                <h3>Tab Test</h3>
+
+                <div class="row">
+                    <bs3:tabframe>
+                        <bs3:tabpage>
+                            <jsp:attribute name="headTemplate">
+                                <li role="presentation" class="active">
+                                    <a href="#home" aria-controls="home"  role="tab" data-toggle="tab">Home</a>
+                                </li>
+                            </jsp:attribute>
+                            <jsp:body>
+                                <div role="tabpanel" class="tab-pane active" id="home">This is home
+                                    <bs3:icon name="search" />
+                                </div>
+                            </jsp:body>
+                        </bs3:tabpage>
+                        <bs3:tabpage>
+                            <jsp:attribute name="headTemplate">
+                                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab"  data-toggle="tab">Profile</a></li>
+                            </jsp:attribute>
+                            <jsp:body>
+                                <div role="tabpanel" class="tab-pane" id="profile">This is profile</div>
+                            </jsp:body>
+                        </bs3:tabpage>
+                        <bs3:tabpage>
+                            <jsp:attribute name="headTemplate">
+                                <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+                            </jsp:attribute>
+                            <jsp:body>
+                                <div role="tabpanel" class="tab-pane" id="messages">this is message</div>
+                            </jsp:body>
+                        </bs3:tabpage>
+                        <bs3:tabpage>
+                            <jsp:attribute name="headTemplate">
+                                <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+                            </jsp:attribute>
+                            <jsp:body>
+                                <div role="tabpanel" class="tab-pane" id="settings">this is settings</div>
+                            </jsp:body>
+                        </bs3:tabpage>
+                    </bs3:tabframe>
+                </div>
                 <h3>Navbar Test
                     <small>multiple navbarbrands and navbarnavs</small>
                 </h3>
@@ -151,6 +193,7 @@ Error incidunt iusto ullam. Alias, eveniet?
 
                 <hr>
                 <h3>Block quotes, use &lt;cite&gt; to speicify the source</h3>
+
                 <div class="row">
                     <div class="col-md-6">
                         <bs3:blockquote
@@ -172,6 +215,7 @@ Error incidunt iusto ullam. Alias, eveniet?
 
                 <hr>
                 <h3>Alerts - dismissible alerts can be removed from dom</h3>
+
                 <div class="row">
                     <div class="col-md-4">
                         <bs3:alert canRemove="true" elementClass="fade in">
@@ -192,6 +236,7 @@ Error incidunt iusto ullam. Alias, eveniet?
 
                 <hr>
                 <h3>Formatting tables</h3>
+
                 <div class="row">
                     <div class="col-md-3">
                         <bs3:tableframe title="My Table">
@@ -316,6 +361,7 @@ Error incidunt iusto ullam. Alias, eveniet?
 
                 <hr>
                 <h3>Panels</h3>
+
                 <div class="row">
                     <div class="col-md-3">
 
@@ -364,6 +410,7 @@ Error incidunt iusto ullam. Alias, eveniet?
                 <hr>
                 <div class="container">
                     <h3>Dorpdown and dropup</h3>
+
                     <div class="row">
                         <div class="col-md-3">
                             <bs3:dropdown items="${list.cars}" var="item" title="Dropdown1">
@@ -395,7 +442,7 @@ Error incidunt iusto ullam. Alias, eveniet?
                 <hr>
                 <div class="row">
                     <div class="col-md-12">
-                        <bs3:toolbar >
+                        <bs3:toolbar>
                             <bs3:buttongroup var="item" items="${list.cars}" buttonClass="default">
                             <jsp:attribute name="itemTemplate">
                                 ${item.model}
@@ -413,6 +460,7 @@ Error incidunt iusto ullam. Alias, eveniet?
 
                 <hr>
                 <h3>Button groups</h3>
+
                 <div class="row">
                     <div class="col-md-3">
                         <bs3:buttongroup var="item" items="${list.cars}" isVertical="true">
@@ -426,7 +474,7 @@ Error incidunt iusto ullam. Alias, eveniet?
                     </div>
 
                     <div class="col-md-9">
-                        <bs3:buttongroup var="item" items="${list.cars}" >
+                        <bs3:buttongroup var="item" items="${list.cars}">
                             <jsp:attribute name="itemTemplate">
                                <bs3:button>${item}</bs3:button>
                             </jsp:attribute>
@@ -486,6 +534,7 @@ Error incidunt iusto ullam. Alias, eveniet?
 
                 <hr>
                 <h3>BUtton dropdowns</h3>
+
                 <div class="row">
                     <div class="col-md-12">
                         <bs3:buttondropdown var="item" items="${list.cars}" title="Cars" split="true">

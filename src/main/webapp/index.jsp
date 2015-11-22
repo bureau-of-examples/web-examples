@@ -55,8 +55,8 @@
             </section>
             <div class="main-content">
                 <ul>
-                    <li><a href="bootstrapTest.html">Bootstrap 3 Test Page</a></li>
-                    <li><a href="bs3Test.jsp">Bootstrap 3 Tags Test Page</a></li>
+                    <li><a href="examples/bootstrap3/index.html">Bootstrap 3 Test Page</a></li>
+                    <li><a href="bootstrap3tags.jsp">Bootstrap 3 Tags Test Page</a></li>
                     <li><a href="examples/fullscreenbanner/index.jsp">Full-screen Banner example</a></li>
                     <li><a href="examples/clientlist/index.jsp">Client list example</a></li>
                 </ul>

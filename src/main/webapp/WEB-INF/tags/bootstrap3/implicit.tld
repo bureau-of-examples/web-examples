@@ -1,0 +1,14 @@
+<taglib xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+        version="2.1">
+    <!--
+    This file is put in a tag directory to enable the implicit tags in the folder to use JSP 2.1 where the syntax below in tag attribute:
+    #{deferredSyntax}
+    -->
+    <tlib-version>1.0</tlib-version>
+    <short-name>zcl-bootstrap3-tags</short-name>    <!--
+    See the link below for a list of JEE related schemas:
+    http://www.oracle.com/webfolder/technetwork/jsc/xml/ns/javaee/index.html
+    -->
+</taglib>
