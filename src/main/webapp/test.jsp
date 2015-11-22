@@ -40,7 +40,7 @@
 <div>
 <jsp:useBean id="car" class="zhy2002.webexamples.test.Car"/>
 <jsp:setProperty name="car" property="make" value="Toyota"/>
-<t:deferred value="#{2}" deferredMethod="#{car.getMake}" />
+<t:deferred value="#{2}" deferredMethod="#{car.getMake}" parentPageContext="${pageContext}" />
 </div>
 </body>
 </html>
