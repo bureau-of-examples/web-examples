@@ -34,4 +34,12 @@
         <name>dynamicAttributes</name>
         <path>/WEB-INF/tags/common/dynamicAttributes.tag</path>
     </tag-file>
+    <tag-file>
+        <name>get</name>
+        <path>/WEB-INF/tags/common/get.tag</path>
+    </tag-file>
+    <tag-file>
+        <name>put</name>
+        <path>/WEB-INF/tags/common/put.tag</path>
+    </tag-file>
 </taglib>

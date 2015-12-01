@@ -10,4 +10,7 @@
 .cursor-pointer {
   cursor: pointer; }
 
+.no-border-top {
+  border-top: none; }
+
 /*# sourceMappingURL=bootstrap3-tags.css.map */

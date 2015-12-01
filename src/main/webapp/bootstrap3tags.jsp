@@ -20,44 +20,45 @@
                 <h3>Tab Test</h3>
 
                 <div class="row">
+                    <div class="col-md-8 col-md-offset-2" >
                     <bs3:tabframe>
-                        <bs3:tabpage>
-                            <jsp:attribute name="headTemplate">
-                                <li role="presentation" class="active">
-                                    <a href="#home" aria-controls="home"  role="tab" data-toggle="tab">Home</a>
-                                </li>
-                            </jsp:attribute>
+                        <bs3:tabpage headLabel="Home" isActive="true">
                             <jsp:body>
-                                <div role="tabpanel" class="tab-pane active" id="home">This is home
-                                    <bs3:icon name="search" />
-                                </div>
+                                <bs3:panel elementClass="no-border-top">
+                                    This is home  <bs3:icon name="search" elementId="search-icon" onclick="alert('hi')" />
+                                </bs3:panel>
                             </jsp:body>
                         </bs3:tabpage>
-                        <bs3:tabpage>
-                            <jsp:attribute name="headTemplate">
-                                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab"  data-toggle="tab">Profile</a></li>
-                            </jsp:attribute>
+                        <bs3:tabpage headLabel="Profile">
                             <jsp:body>
-                                <div role="tabpanel" class="tab-pane" id="profile">This is profile</div>
+                                <bs3:panel elementClass="no-border-top">
+                                This is profile
+                                <bs3:button buttonType="default" elementClass="my-class" type="submit" >Button Tag</bs3:button>
+                                </bs3:panel>
                             </jsp:body>
                         </bs3:tabpage>
-                        <bs3:tabpage>
+                        <bs3:tabpage headLabel="Messages">
                             <jsp:attribute name="headTemplate">
-                                <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+                                <b>Messages</b>
                             </jsp:attribute>
                             <jsp:body>
-                                <div role="tabpanel" class="tab-pane" id="messages">this is message</div>
+                                <bs3:panel elementClass="no-border-top">
+                                this is message
+                                </bs3:panel>
                             </jsp:body>
                         </bs3:tabpage>
-                        <bs3:tabpage>
+                        <bs3:tabpage headLabel="Settings">
                             <jsp:attribute name="headTemplate">
-                                <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+                                <em>Settings</em>
                             </jsp:attribute>
                             <jsp:body>
-                                <div role="tabpanel" class="tab-pane" id="settings">this is settings</div>
+                                <bs3:panel elementClass="no-border-top">
+                                this is settings
+                                </bs3:panel>
                             </jsp:body>
                         </bs3:tabpage>
                     </bs3:tabframe>
+                    </div>
                 </div>
                 <h3>Navbar Test
                     <small>multiple navbarbrands and navbarnavs</small>
@@ -204,7 +205,7 @@ Error incidunt iusto ullam. Alias, eveniet?
                         </bs3:blockquote>
                     </div>
                     <div class="col-md-6">
-                        <bs3:blockquote reverse="true"
+                        <bs3:blockquote reverse="true" onclick="alert('This is a block quote.')"
                                         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.">
                             <jsp:attribute name="footerTemplate">
                                 Someone famous in <cite title="Source Title">Source Title</cite>

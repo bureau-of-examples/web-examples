@@ -5,7 +5,7 @@
 
 <c:if test="${not empty dynamicAttributes}" >
     <c:forEach items="${dynamicAttributes}" var="attr" >
-        ${" " + attr.key}="${f:escapeXml(attr.value)}" ${" "}
+        ${" "}${attr.key}="${f:escapeXml(attr.value)}"
     </c:forEach>
 </c:if>
 

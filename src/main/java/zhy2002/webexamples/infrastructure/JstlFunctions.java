@@ -7,6 +7,22 @@ import java.util.EmptyStackException;
  */
 public class JstlFunctions {
 
+    public static void enqueue(PageValueQueueBean queueMap, String key, Object value){
+        queueMap.enqueue(key, value);
+    }
+
+    public static Object dequeue(PageValueQueueBean queueMap, String key){
+        return queueMap.dequeue(key);
+    }
+
+    public static Object head(PageValueQueueBean queueMap, String key) {
+        return queueMap.head(key);
+    }
+
+    public static boolean existsQueue(PageValueQueueBean queueMap, String key){
+        return queueMap.exists(key);
+    }
+
     public static void push(PageValueStackBean stackMap, String key, Object value) {
         stackMap.push(key, value);
     }
@@ -26,4 +42,6 @@ public class JstlFunctions {
     public static boolean exists(PageValueStackBean stackMap, String key){
         return stackMap.exists(key);
     }
+
+
 }

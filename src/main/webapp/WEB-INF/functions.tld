@@ -30,4 +30,28 @@
         <function-class>zhy2002.webexamples.infrastructure.JstlFunctions</function-class>
         <function-signature>boolean exists(zhy2002.webexamples.infrastructure.PageValueStackBean,java.lang.String)</function-signature>
     </function>
+
+    <function>
+        <name>enqueue</name>
+        <function-class>zhy2002.webexamples.infrastructure.JstlFunctions</function-class>
+        <function-signature>void enqueue(zhy2002.webexamples.infrastructure.PageValueQueueBean,java.lang.String,java.lang.Object)</function-signature>
+    </function>
+
+    <function>
+        <name>dequeue</name>
+        <function-class>zhy2002.webexamples.infrastructure.JstlFunctions</function-class>
+        <function-signature>java.lang.Object dequeue(zhy2002.webexamples.infrastructure.PageValueQueueBean,java.lang.String)</function-signature>
+    </function>
+
+    <function>
+        <name>head</name>
+        <function-class>zhy2002.webexamples.infrastructure.JstlFunctions</function-class>
+        <function-signature>java.lang.Object head(zhy2002.webexamples.infrastructure.PageValueQueueBean,java.lang.String)</function-signature>
+    </function>
+
+    <function>
+        <name>existsQueue</name>
+        <function-class>zhy2002.webexamples.infrastructure.JstlFunctions</function-class>
+        <function-signature>boolean existsQueue(zhy2002.webexamples.infrastructure.PageValueQueueBean,java.lang.String)</function-signature>
+    </function>
 </taglib>

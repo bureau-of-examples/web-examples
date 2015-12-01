@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": ";AAGE,yBAAa;EACX,OAAO,EAAE,IAAI;AAIb,qCAAe;EACb,OAAO,EAAE,IAAI;AAEf,mCAAa;EACX,OAAO,EAAE,KAAK;;;AAOpB,eAAgB;EACd,MAAM,EAAE,OAAO",
+"mappings": ";AAGE,yBAAa;EACX,OAAO,EAAE,IAAI;AAIb,qCAAe;EACb,OAAO,EAAE,IAAI;AAEf,mCAAa;EACX,OAAO,EAAE,KAAK;;;AAOpB,eAAgB;EACd,MAAM,EAAE,OAAO;;AAGjB,cAAe;EACb,UAAU,EAAE,IAAI",
 "sources": ["bootstrap3-tags.scss"],
 "names": [],
 "file": "bootstrap3-tags.css"
