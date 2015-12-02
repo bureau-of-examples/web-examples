@@ -35,11 +35,15 @@
         <path>/WEB-INF/tags/common/dynamicAttributes.tag</path>
     </tag-file>
     <tag-file>
-        <name>get</name>
-        <path>/WEB-INF/tags/common/get.tag</path>
+        <name>pushQueue</name>
+        <path>/WEB-INF/tags/common/pushQueue.tag</path>
     </tag-file>
     <tag-file>
-        <name>put</name>
-        <path>/WEB-INF/tags/common/put.tag</path>
+        <name>dequeue</name>
+        <path>/WEB-INF/tags/common/dequeue.tag</path>
+    </tag-file>
+    <tag-file>
+        <name>enqueue</name>
+        <path>/WEB-INF/tags/common/enqueue.tag</path>
     </tag-file>
 </taglib>

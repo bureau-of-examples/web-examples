@@ -1,30 +1,22 @@
 package zhy2002.webexamples.infrastructure;
 
+import java.util.Deque;
 import java.util.EmptyStackException;
+import java.util.LinkedList;
 
 /**
- * The backing class for the jstl functions.
+ * The backing class for the JSTL functions.
  */
 public class JstlFunctions {
 
-    public static void enqueue(PageValueQueueBean queueMap, String key, Object value){
-        queueMap.enqueue(key, value);
-    }
-
-    public static Object dequeue(PageValueQueueBean queueMap, String key){
-        return queueMap.dequeue(key);
-    }
-
-    public static Object head(PageValueQueueBean queueMap, String key) {
-        return queueMap.head(key);
-    }
-
-    public static boolean existsQueue(PageValueQueueBean queueMap, String key){
-        return queueMap.exists(key);
-    }
-
     public static void push(PageValueStackBean stackMap, String key, Object value) {
         stackMap.push(key, value);
+    }
+
+    public static Deque<Object> pushQueue(PageValueStackBean stackMap, String queueName) {
+        LinkedList<Object> queue = new LinkedList<>();
+        push(stackMap, queueName, queue);
+        return queue;
     }
 
     public static Object pop(PageValueStackBean stackMap, String key) {
@@ -43,5 +35,16 @@ public class JstlFunctions {
         return stackMap.exists(key);
     }
 
+    @SuppressWarnings("unchecked")
+    public static void enqueue(PageValueStackBean stackMap, String queueName, Object value){
+        Deque queue = (Deque)peek(stackMap, queueName);
+        queue.addLast(value);
+    }
+
+    @SuppressWarnings("unchecked")
+    public static Object dequeue(PageValueStackBean stackMap, String queueName){
+        Deque queue = (Deque)peek(stackMap, queueName);
+        return queue.pollFirst();
+    }
 
 }

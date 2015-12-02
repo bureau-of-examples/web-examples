@@ -14,8 +14,7 @@
 
         <c:if test="${empty tabPaneId}" >
             <comm:pageUniqueId var="tabPaneId" />
-            <comm:peek var="autoIdQueue" />
-            ${autoIdQueue.add(tabPaneId)}
+            <comm:enqueue queueName="autoIdQueue" value="${tabPaneId}" />
         </c:if>
 
         <li role="presentation" ${isActive ? ' class="active"  ' : ''} >
@@ -34,11 +33,10 @@
     <c:otherwise>
 
         <c:if test="${empty tabPaneId}" >
-            <comm:peek var="autoIdQueue" />
-            <c:set var="tabPaneId" value="${autoIdQueue.poll()}" />
+            <comm:dequeue queueName="autoIdQueue" var="tabPaneId" />
         </c:if>
 
-        <div role="tabpanel" class="tab-pane${isActive ? ' active' : ''}" id="${tabPaneId}">
+        <div role="tabpanel" class="tab-pane ${isActive ? 'active' : ''}" id="${tabPaneId}">
             <jsp:doBody />
         </div>
     </c:otherwise>
