@@ -1,6 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="comm" uri="https://github.com/bureau-of-examples/web-examples/tags" %>
-<%@tag pageEncoding="UTF-8" language="java" trimDirectiveWhitespaces="true" %>
+<%@tag pageEncoding="UTF-8" language="java" trimDirectiveWhitespaces="true" dynamic-attributes="dynamicAttributes"  %>
 <%@attribute name="elementClass" type="java.lang.String" %>
 <%@attribute name="elementId" type="java.lang.String" %>
 <%@attribute name="title" type="java.lang.String" %>

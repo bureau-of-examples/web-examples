@@ -1,7 +1,7 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="comm" uri="https://github.com/bureau-of-examples/web-examples/tags" %>
-<%@ taglib prefix="bs3" tagdir="/WEB-INF/tags/bootstrap3" %>
-<%@tag pageEncoding="UTF-8" language="java" trimDirectiveWhitespaces="true" %>
+<%@tag pageEncoding="UTF-8" language="java" trimDirectiveWhitespaces="true" dynamic-attributes="dynamicAttributes"  %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="comm" uri="https://github.com/bureau-of-examples/web-examples/tags" %>
+<%@taglib prefix="bs3" tagdir="/WEB-INF/tags/bootstrap3" %>
 <%@attribute name="title" type="java.lang.String" %>
 <%@attribute name="icon" type="java.lang.String" %>
 <%@attribute name="elementClass" type="java.lang.String" %>

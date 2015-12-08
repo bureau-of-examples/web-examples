@@ -1,17 +1,17 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="comm" uri="https://github.com/bureau-of-examples/web-examples/tags"%>
-<%@tag pageEncoding="UTF-8" language="java" trimDirectiveWhitespaces="true"  %>
-<%@attribute name="var" type="java.lang.String" required="true" rtexprvalue="false" %>
+<%@tag description="A button group is a list of buttons." dynamic-attributes="dynamicAttributes" pageEncoding="UTF-8" language="java" trimDirectiveWhitespaces="true" body-content="empty" isELIgnored="false" deferredSyntaxAllowedAsLiteral="false" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="comm" uri="https://github.com/bureau-of-examples/web-examples/tags"%>
+
 <%@attribute name="items" type="java.util.Collection" required="true" %>
+<%@attribute name="var" type="java.lang.String" required="true" rtexprvalue="false" %>
+<%@variable alias="item" name-from-attribute="var" variable-class="java.lang.String" scope="NESTED" %>
 <%@attribute name="itemTemplate" fragment="true" required="true" %>
 <%@attribute name="buttonAttributesTemplate" fragment="true" %>
-<%@attribute name="elementClass" type="java.lang.String" %>
-<%@attribute name="elementId" type="java.lang.String" %>
-<%@attribute name="title" type="java.lang.String"  %>
-<%@attribute name="size" type="java.lang.String"  %>
+<%@attribute name="elementClass" type="java.lang.String" description="button type followed by additional classes." %>
+<%@attribute name="title" type="java.lang.String" %>
+<%@attribute name="size" type="java.lang.String" %>
 <%@attribute name="buttonClass" type="java.lang.String" %>
 <%@attribute name="isVertical" type="java.lang.Boolean" %>
-<%@variable alias="item" name-from-attribute="var" variable-class="java.lang.String" scope="NESTED" %>
 
 <c:set var="wrapItem" value="${false}" />
 <c:if test="${not empty buttonClass or not empty buttonAttributesTemplate}" >
@@ -30,7 +30,7 @@
     <c:set var="css" value="${css} ${elementClass}" />
 </c:if>
 
-<div <c:if test="${not empty elementId}">id="${elementId}"</c:if> class="${css}" role="group"  <c:if test="${not empty title}">aria-label="<c:out value="${title}" />"</c:if> >
+<div class="${css}" role="group"  <c:if test="${not empty title}">aria-label="<c:out value="${title}" />"</c:if> <comm:dynamicAttributes dynamicAttributes="${dynamicAttributes}" /> >
     <comm:push value="buttongroup" var="parentTagName" />
     <c:forEach var="item" items="${items}" >
         <c:if test="${wrapItem}">

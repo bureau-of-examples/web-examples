@@ -1,6 +1,7 @@
 <%@tag pageEncoding="UTF-8" language="java" trimDirectiveWhitespaces="true" dynamic-attributes="bodyAttributes" %>
 <%@taglib prefix="comm" uri="https://github.com/bureau-of-examples/web-examples/tags" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <%@attribute name="title" type="java.lang.String" %>
 <%@attribute name="lang" type="java.lang.String" %>
 <%@attribute name="bodyClass" type="java.lang.String" %>
@@ -15,8 +16,8 @@
 <c:set var="bowerDir" value="${empty bowerDir ? 'components' : bowerDir}"/>
 <c:set var="contextPath" value="${pageContext.request.contextPath}"/>
 
-<!doctype html>
-<html lang="${lang}"><%--todo change to attribute--%>
+<!DOCTYPE html>
+<html lang="${lang}">
 <head>
     <comm:htmlMetaTags />
     <title><c:out value="${title}" /></title>

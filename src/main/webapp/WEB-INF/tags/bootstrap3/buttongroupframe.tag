@@ -1,9 +1,10 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="comm" uri="https://github.com/bureau-of-examples/web-examples/tags"%>
-<%@tag pageEncoding="UTF-8" language="java" trimDirectiveWhitespaces="true" %>
+
+<%@tag description="A button group without data binding." dynamic-attributes="dynamicAttributes" pageEncoding="UTF-8" language="java" trimDirectiveWhitespaces="true" body-content="empty" isELIgnored="false" deferredSyntaxAllowedAsLiteral="false" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="comm" uri="https://github.com/bureau-of-examples/web-examples/tags"%>
+
 <%@attribute name="contentTemplate" fragment="true" required="true" %>
 <%@attribute name="elementClass" type="java.lang.String" %>
-<%@attribute name="elementId" type="java.lang.String" %>
 <%@attribute name="title" type="java.lang.String"  %>
 <%@attribute name="size" type="java.lang.String"  %>
 <%@attribute name="buttonClass" type="java.lang.String" %>
@@ -24,7 +25,7 @@
 <c:if test="${not empty elementClass}">
     <c:set var="css" value="${css} ${elementClass}" />
 </c:if>
-<div <c:if test="${not empty elementId}">id="${elementId}"</c:if> class="${css}" role="group"  <c:if test="${not empty title}">aria-label="<c:out value="${title}" />"</c:if> >
+<div class="${css}" role="group"  <c:if test="${not empty title}">aria-label="<c:out value="${title}" />"</c:if> <comm:dynamicAttributes dynamicAttributes="${dynamicAttributes}" /> >
     <comm:push value="buttongroup" var="parentTagName" />
     <jsp:invoke fragment="contentTemplate" />
     <comm:pop var="parentTagName" />

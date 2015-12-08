@@ -1,7 +1,7 @@
 <%@tag pageEncoding="UTF-8" language="java" trimDirectiveWhitespaces="true" %>
 <%@taglib prefix="bs3" tagdir="/WEB-INF/tags/bootstrap3" %>
-<%@ taglib prefix="comm" uri="https://github.com/bureau-of-examples/web-examples/tags" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="comm" uri="https://github.com/bureau-of-examples/web-examples/tags" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@attribute name="elementId" type="java.lang.String" %>
 <%@attribute name="inverse" type="java.lang.Boolean" %>
 <%@attribute name="position" type="java.lang.String" %>

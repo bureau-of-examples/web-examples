@@ -1,7 +1,8 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="f" uri="http://java.sun.com/jsp/jstl/functions" %>
-<%@ taglib prefix="comm" uri="https://github.com/bureau-of-examples/web-examples/tags" %>
-<%@tag pageEncoding="UTF-8" language="java" trimDirectiveWhitespaces="true" %>
+<%@tag description="A bootstrap dropdown which can be put in navbar, buttongroup or standalone." dynamic-attributes="dynamicAttributes" pageEncoding="UTF-8" language="java" trimDirectiveWhitespaces="true" body-content="empty" isELIgnored="false" deferredSyntaxAllowedAsLiteral="false" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="f" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@taglib prefix="comm" uri="https://github.com/bureau-of-examples/web-examples/tags" %>
+
 <%@attribute name="var" type="java.lang.String" required="true" rtexprvalue="false" %>
 <%@attribute name="items" type="java.util.Collection" required="true" %>
 <%@attribute name="itemTemplate" fragment="true" required="true" %>
@@ -46,9 +47,8 @@
     <c:set var="menuClass" value="${menuClass} dropdown-menu-right"/>
 </c:if>
 
-<${wrapperElementName} class="${css}"
-     <c:if test="${not empty elementId}">id="${elementId}"</c:if> >
-    <${buttonElementName} class="<c:if test="${buttonElementName == 'button'}"> btn btn-${buttonClass} </c:if> ${' '} dropdown-toggle" ${buttonElementName == "button" ? 'type="button"' : 'href="#"' }
+<${wrapperElementName} class="${css}" <c:if test="${not empty elementId}">id="${elementId}"</c:if> <comm:dynamicAttributes dynamicAttributes="${dynamicAttributes}" /> >
+    <${buttonElementName} class="<c:if test="${buttonElementName == 'button'}"> btn btn-${buttonClass} </c:if> dropdown-toggle" ${buttonElementName == "button" ? 'type="button"' : 'href="#"' }
             <c:if test="${not empty elementId}">id="${elementId}_btn"</c:if> data-toggle="dropdown" aria-haspopup="true"
             aria-expanded="false" role="button">
         <c:out value="${title} "/>
