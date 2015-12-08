@@ -4,10 +4,10 @@ html {
   height: 100%; }
 
 body {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   font-family: Verdana, Geneva, sans-serif;
-  line-height: 20px;
+  line-height: 24px;
   color: #585858;
   background-color: #F4F4F4;
   height: 100%; }
@@ -127,5 +127,7 @@ article {
   border-radius: 1em;
   padding: 1em;
   border-color: yellow; }
+
+/*********************** TEST STYLE *******************************/
 
 /*# sourceMappingURL=site.css.map */

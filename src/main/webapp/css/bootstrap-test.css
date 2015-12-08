@@ -22,4 +22,7 @@ body {
   color: orange;
   min-width: 240px; }
 
+.affix.top5 {
+  top: 5px; }
+
 /*# sourceMappingURL=bootstrap-test.css.map */
