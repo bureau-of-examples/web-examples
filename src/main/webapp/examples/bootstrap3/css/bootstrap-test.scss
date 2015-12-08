@@ -1,7 +1,6 @@
 body {
   background-color: #fcfcfc;
   overflow-x: hidden;
-
 }
 
 .dropdown-menu-content {
@@ -34,4 +33,12 @@ body {
     top:5px;
   }
 
+  &.fade-in-box{
+    position:static;
+    transition: opacity 2s;
+  }
+}
+
+.fade-in-box.affix-top {
+  opacity: 0.1;
 }

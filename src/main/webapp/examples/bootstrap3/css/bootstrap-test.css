@@ -24,5 +24,11 @@ body {
 
 .affix.top5 {
   top: 5px; }
+.affix.fade-in-box {
+  position: static;
+  transition: opacity 2s; }
+
+.fade-in-box.affix-top {
+  opacity: 0.1; }
 
 /*# sourceMappingURL=bootstrap-test.css.map */
