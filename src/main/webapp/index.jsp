@@ -9,7 +9,7 @@
         <header>
             <nav class="site-link"><a href=" ">starloop.space</a></nav>
             <nav class="top-link"><a href="#">Links</a> | <a href="#">Blog</a> | <a href="#">Utilities</a> | <a
-                    href="#">Examples</a> | <a href="#">About</a></nav>
+                    href="#examples">Examples</a> | <a href="#">About</a></nav>
             <div class="h1-container fade-in three">
                 <h1>Web Examples Index Page</h1>
             </div>
@@ -54,11 +54,13 @@
 
             </section>
             <div class="main-content">
+                <a id="examples"></a>
                 <ul>
                     <li><a href="examples/bootstrap3/index.html">Bootstrap 3 Test Page</a></li>
                     <li><a href="bootstrap3tags.jsp">Bootstrap 3 Tags Test Page</a></li>
                     <li><a href="examples/fullscreenbanner/index.jsp">Full-screen Banner example</a></li>
                     <li><a href="examples/clientlist/index.jsp">Client list example</a></li>
+                    <li><a href="examples/musicsite/index.html">Navigation examle</a></li>
                 </ul>
                 <article>
                     <h1>Demo Websites</h1>

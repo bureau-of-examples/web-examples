@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/site.css">
+    <!-- http://docs.emmet.io/cheat-sheet/ -->
+    <title></title>
+</head>
+<body>
+
+<div class="container-fluid header">
+    <header>
+        <a href="index.html">My Tunes</a>
+    </header>
+    <nav class="pdsa-sn-wrapper">
+        <ul>
+            <li class="pdsa-sn-brand hide-le800">
+                <a href="index.html">Music</a>
+            </li>
+            <li>
+              <a href="#" class="hide-gt800"><span class="glyphicon glyphicon-home" title="Home" ></span></a>
+                <a href="#" class="hide-le800">Home</a>
+            </li>
+            <li>
+                <a href="#" class="hide-gt800"><span class="glyphicon glyphicon-tag" title="Genres" ></span></a>
+                <a href="#" class="hide-le800" data-toggle="collapse" data-target="#ulGenres">Genres <span class="caret"></span></a>
+                <!-- regarding the jumpy collapse transition: https://github.com/twbs/bootstrap/issues/12093 -->
+                <div class="hide-le800">
+                    <ul id="ulGenres" class="collapse">
+                        <li><a href="#">All Genres</a></li>
+                        <li><a href="#">Jazz</a></li>
+                        <li><a href="#">Blues</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#" class="hide-gt800"><span class="glyphicon glyphicon-list" title="Playlists" ></span></a>
+                <a href="#" class="hide-le800" data-toggle="collapse" data-target="#ulPlaylists" >Playlists <span class="caret"></span></a>
+                <div class="hide-le800">
+                    <ul id="ulPlaylists" class="collapse">
+                        <li><a href="#">Playlist 1</a></li>
+                        <li><a href="#">Playlist 2</a></li>
+                        <li><a href="#">Playlist 3</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#" class="hide-gt800"><span class="glyphicon glyphicon-music" title="Music" ></span></a>
+                <a href="#" class="hide-le800">Songs</a>
+            </li>
+            <li>
+                <a href="#" class="hide-gt800"><span class="glyphicon glyphicon-download" title="Downloads" ></span></a>
+                <a href="#" class="hide-le800">Downloads</a>
+
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<div class="container-fluid body-content">
+    <div class="row">
+        <div class="col-xs-10 col-lg-12">
+            <h1>My Music</h1>
+
+            <p>This is where you gather all of your music</p>
+        </div>
+    </div>
+</div>
+
+    <script src="../../components/jquery/dist/jquery.min.js" ></script>
+    <script src="../../components/bootstrap/dist/js/bootstrap.min.js" ></script>
+</body>
+</html>
