@@ -48,6 +48,22 @@ section.main {
     line-height: 1.8em;
 }
 
+.box {
+    position:relative;
+    width: 25em;
+    height:10em;
+    background-color: #ddd;
+    margin-bottom: 1em;
+    opacity: 0;
+    left: -25em;
+    transition: left 2s ease, opacity 3s ease;
+}
+.box.box-show {
+    opacity: 1;
+    left:0;
+}
+
+
 footer {
     background-color: #333;
     color: #ddd;
