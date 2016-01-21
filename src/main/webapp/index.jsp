@@ -57,6 +57,7 @@
                 <a id="examples"></a>
                 <ul>
                     <li><a href="examples/bootstrap3/index.html">Bootstrap 3 Test Page</a></li>
+                    <li><a href="examples/foundation6/index.html">Foundation6 Test Page</a></li>
                     <li><a href="bootstrap3tags.jsp">Bootstrap 3 Tags Test Page</a></li>
                     <li><a href="examples/fullscreenbanner/index.jsp">Full-screen Banner example</a></li>
                     <li><a href="examples/clientlist/index.jsp">Client list example</a></li>
